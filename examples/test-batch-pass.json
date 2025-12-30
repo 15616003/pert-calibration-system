@@ -1,0 +1,23 @@
+{
+  "plan_name": "Test Batch - All Passing",
+  "impact_level": 2,
+  "quick_mode": true,
+  "phases": [
+    {
+      "name": "Phase 1: Setup",
+      "risk_factors": {
+        "complexity": {"O": 0, "M": 2, "P": 5},
+        "dependencies": {"O": 0, "M": 2, "P": 5},
+        "testing": {"O": 0, "M": 2, "P": 5}
+      }
+    },
+    {
+      "name": "Phase 2: Integration",
+      "risk_factors": {
+        "complexity": {"O": 0, "M": 3, "P": 8},
+        "dependencies": {"O": 0, "M": 3, "P": 10},
+        "testing": {"O": 0, "M": 3, "P": 8}
+      }
+    }
+  ]
+}

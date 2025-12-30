@@ -1,0 +1,238 @@
+# PERT Calibration System - Comprehensive .gitignore
+
+# ============================================================================
+# Python Artifacts
+# ============================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ============================================================================
+# Virtual Environments
+# ============================================================================
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+virtualenv/
+
+# ============================================================================
+# IDE and Editor Files
+# ============================================================================
+# Visual Studio Code
+.vscode/
+.history/
+*.code-workspace
+
+# PyCharm / IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Vim
+*.swp
+*.swo
+*~
+.vim/
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ============================================================================
+# Calibration System Data Files (IMPORTANT - DO NOT COMMIT)
+# ============================================================================
+# Calibration database and tracking (exclude user data, keep examples)
+.calibration/
+outcomes.jsonl
+outcomes-backup.jsonl
+multiplier-history.txt
+
+# Exclude JSONL files in root and user directories, but keep examples
+/*.jsonl
+user-*/*.jsonl
+!examples/*.jsonl
+
+# Generated reports
+reports/
+*.md.bak
+*-calibration-report.md
+latest-report.md
+
+# ============================================================================
+# Testing and Coverage
+# ============================================================================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+*.cover
+*.log
+.cache/
+nosetests.xml
+coverage.xml
+*.coveragerc
+
+# ============================================================================
+# System Files
+# ============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.Trash-*
+.directory
+
+# ============================================================================
+# Security and Credentials (CRITICAL - NEVER COMMIT)
+# ============================================================================
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.pfx
+secrets/
+credentials/
+*.secret
+
+# ============================================================================
+# Documentation Build Artifacts
+# ============================================================================
+docs/_build/
+docs/.doctrees/
+docs/_static/
+site/
+
+# ============================================================================
+# Jupyter Notebooks (if used for analysis)
+# ============================================================================
+.ipynb_checkpoints/
+*.ipynb
+
+# ============================================================================
+# Backup and Temporary Files
+# ============================================================================
+*.bak
+*.tmp
+*.temp
+*.old
+*~.nib
+*.orig
+
+# ============================================================================
+# Claude Code Integration (Project-Specific)
+# ============================================================================
+# CLAUDE.md contains project-specific instructions for Claude Code
+# Users should create their own based on their workflow
+CLAUDE.md
+
+# ============================================================================
+# User-Specific Data and Examples
+# ============================================================================
+# Personal plan files (keep examples/ but ignore user data)
+user-plans/
+my-*.md
+test-plan-*.md
+
+# Personal calibration data
+user-calibration/
+personal-*.jsonl
+
+# Test data files in root (temporary test files, not examples)
+# Note: examples/test-batch*.json are committed as examples
+/test-batch.json
+/test-batch-pass.json
+*-output.md
+
+# ============================================================================
+# Git-Specific
+# ============================================================================
+*.patch
+*.diff
+
+# ============================================================================
+# Package Managers
+# ============================================================================
+# pip
+pip-wheel-metadata/
+
+# Poetry
+poetry.lock
+.poetry/
+
+# Pipenv
+Pipfile.lock
+
+# ============================================================================
+# Profiling and Performance
+# ============================================================================
+*.prof
+*.lprof
+*.pyprof
+
+# ============================================================================
+# Local Configuration Overrides
+# ============================================================================
+# Allow versioned config templates, ignore local overrides
+config.local.py
+settings.local.py
+local_settings.py

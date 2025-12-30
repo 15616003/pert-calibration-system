@@ -1,0 +1,53 @@
+{
+  "phase_name": "Database Schema Migration",
+  "impact_level": 3,
+  "risk_factors": {
+    "complexity": {
+      "_comment": "O=Optimistic (best case), M=Most Likely, P=Pessimistic (worst case)",
+      "O": 10,
+      "M": 20,
+      "P": 40,
+      "_reasoning": "Schema changes are well-defined, but migration script complexity moderate"
+    },
+    "dependencies": {
+      "_comment": "External libraries, version compatibility",
+      "O": 5,
+      "M": 15,
+      "P": 30,
+      "_reasoning": "Alembic migration tool is well-tested, PostgreSQL version verified"
+    },
+    "stack_compat": {
+      "_comment": "Tested vs untested on current system",
+      "O": 10,
+      "M": 20,
+      "P": 35,
+      "_reasoning": "Have tested migrations in dev, but production data volume unknown"
+    },
+    "knowledge": {
+      "_comment": "Team familiarity with the technology",
+      "O": 5,
+      "M": 10,
+      "P": 20,
+      "_reasoning": "Team has PostgreSQL experience, but first complex migration"
+    },
+    "testing": {
+      "_comment": "Verification and rollback feasibility",
+      "O": 10,
+      "M": 15,
+      "P": 30,
+      "_reasoning": "Can test with production snapshot, rollback strategy documented"
+    }
+  },
+  "_usage_notes": {
+    "_comment": "How to use this file",
+    "command": "python pert-calculator.py --json-file examples/single-phase-example.json",
+    "output": "Generates PERT analysis with confidence score and risk breakdown",
+    "impact_levels": {
+      "1": "Throwaway/Learning (75% threshold)",
+      "2": "Low-Risk/Isolated (85% threshold)",
+      "3": "Medium-Impact/User-facing (85% threshold)",
+      "4": "High-Impact/Critical-Path (85% threshold)",
+      "5": "Mission-Critical/Security (85% threshold)"
+    }
+  }
+}

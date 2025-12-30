@@ -1,0 +1,82 @@
+{
+  "_comment": "Batch PERT Assessment - Process multiple phases in a single run",
+
+  "plan_name": "Multi-Phase Feature Implementation",
+
+  "_comment_impact": "Impact levels: 1=Throwaway (75%), 2=Low-Risk (85%), 3=Medium (85%), 4=High (85%), 5=Critical (85%)",
+  "impact_level": 2,
+
+  "_comment_quick_mode": "Quick mode (3 factors) for Impact 1-2, Full mode (5 factors) for Impact 3-5",
+  "quick_mode": true,
+
+  "phases": [
+    {
+      "name": "Phase 1: Database Schema Setup",
+      "_comment_factors": "Quick mode uses: complexity, dependencies, testing (weights: 0.40, 0.35, 0.25)",
+      "risk_factors": {
+        "complexity": {
+          "_comment": "O=Optimistic (best case), M=Most Likely, P=Pessimistic (worst case)",
+          "O": 0,
+          "M": 5,
+          "P": 15
+        },
+        "dependencies": {
+          "_comment": "External libraries, version compatibility issues",
+          "O": 0,
+          "M": 5,
+          "P": 20
+        },
+        "testing": {
+          "_comment": "Verification complexity, test coverage feasibility",
+          "O": 0,
+          "M": 5,
+          "P": 15
+        }
+      }
+    },
+    {
+      "name": "Phase 2: API Endpoint Implementation",
+      "risk_factors": {
+        "complexity": {
+          "O": 5,
+          "M": 15,
+          "P": 30
+        },
+        "dependencies": {
+          "O": 0,
+          "M": 10,
+          "P": 30
+        },
+        "testing": {
+          "O": 5,
+          "M": 15,
+          "P": 35
+        }
+      }
+    },
+    {
+      "name": "Phase 3: Frontend Integration",
+      "risk_factors": {
+        "complexity": {
+          "O": 10,
+          "M": 20,
+          "P": 40
+        },
+        "dependencies": {
+          "O": 5,
+          "M": 15,
+          "P": 35
+        },
+        "testing": {
+          "O": 10,
+          "M": 20,
+          "P": 40
+        }
+      }
+    }
+  ],
+
+  "_usage": "Run with: python pert-calculator.py --json-file examples/batch-assessment-example.json",
+  "_output": "Generates markdown with individual phase analysis + summary table at end",
+  "_exit_codes": "0 = all phases pass threshold, 1 = any phase fails threshold"
+}
