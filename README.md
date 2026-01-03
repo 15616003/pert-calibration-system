@@ -569,3 +569,9 @@ See `CHANGELOG.md` for version history.
 - [ ] Multi-project calibration tracking
 - [ ] Risk factor correlation analysis
 - [ ] Integrations with project management tools
+
+## Notes as of 
+- BE AWARE: This is a system that requires updates regularly. Metric tracking scripting allows for you to analyze a baseline level of toolcalls and the metrics behind them to recalibrate the system as needed.
+- REDIS + REDIS_INSIGHT + REDIS TOOLS (properly configured) - ABSOLUTELY MANDATORY. This is designed for Claude Code, and if you do not have this setup, you WILL burn through tokens like they were covered with gasoline and hit with fire.
+- This is an ongoing project. In its current (3rd) iteration, and I it can & will be optimized further, cutting token usage and context fill by at least 80% from its current version.
+- THIS IS NOT A DAILY DRIVER. This is most useful (as it stands) when you need to finish a project and dont have the technical knowledge to do so. 
