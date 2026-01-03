@@ -16,16 +16,16 @@ This system provides a **no-shortcuts** approach to project planning confidence 
 - ❌ NO arbitrary heuristics
 - ❌ NO curves or data skewing
 - ✅ Pure PERT formulas (beta distribution)
-- ✅ 95% confidence intervals
-- ✅ Self-calibrating through outcome tracking
+- ✅ Scaled 70%-85% success based planning, no weighted success metrics or curved averages.  
+- ✅ Ability to be recalibrated via outcome tracking scripts
 
 ### Key Features
 
 1. **PERT Calculator** (`pert-calculator.py`)
-   - Three-point estimation (Optimistic, Most Likely, Pessimistic)
+   - 5 estimation (Optimistic, Most Likely, Pessimistic)
    - 5 risk factors: Complexity, Dependencies, Stack Compatibility, Knowledge, Testing
-   - Statistical confidence intervals (±2σ for 95% CI)
-   - Command-line, interactive, and JSON modes
+   - Statistical confidence intervals (±2σ for 70%-85 CI)
+   - Command-line, interactive, and JSON modes****  (WORKS BEST W/ .jsonl implementation w/ Claude Skills)
 
 2. **Outcome Tracker** (`plan-outcome-tracker.py`)
    - Record actual plan implementation outcomes
